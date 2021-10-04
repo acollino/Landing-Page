@@ -1,17 +1,45 @@
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
 }
 
-.header, .section1, .footer{
+h1, h2{
+  padding: 0;
+  margin: 0;
+}
+
+.dark-background, .gray-background, .white-background{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.dark-background{
   background-color: #1f2937;
   color: #e5e7eb
+}
+.gray-background{
+  background-color: #e5e7eb;
 }
 
 .header a{
   text-decoration: none;
   color: #e5e7eb
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links{
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
 .logo, h1{
@@ -23,15 +51,52 @@
   font-weight: 900;
 }
 
+.section1{
+  display: flex;
+  align-items: center;
+}
+
+.section1-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 0px;
+}
+
+.section1-img{
+  width: 300px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
 h1{
   font-size: 48px;
   font-weight: bolder;
+  line-height: 1em;
 }
 
 button{
   background-color: #3882f6;
   color: #e5e7eb;
+  font-weight: bold;
   border-style: none;
+  padding: 6px 15px;
+  border-radius: 5px;
+}
+
+.section2{
+  text-align: center;
+}
+
+.section2-images{
+  display: flex;
+  padding-top: 20px;
+}
+
+.section2-img-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2{
@@ -44,22 +109,42 @@ h2{
   border-color: #3882f6;
 }
 
+.section3{
+  text-align: right;
+  font-weight: bold;
+  padding: 50px 0px;
+}
+
 .section3 .quote{
   color: #1f2937;
   font-size: 36px;
   font-style: italic;
   font-weight: normal;
+  text-align: left;
 }
 
-.section3{
-  background-color: #e5e7eb;
-  font-weight: bold;
-}
-
-.section4{
+.section4 p, .section4 h3{
   color: #e5e7eb;
+  margin:0;
+  padding:0;
+}
+
+.section4 button{
+  border-style:solid;
+  border-color: white;
 }
 
 .section4-blue-box{
   background-color: #3882f6;
+  border-radius: 5px;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0px;
+}
+
+.footer{
+  text-align: center;
+  padding: 25px 0;
 }
