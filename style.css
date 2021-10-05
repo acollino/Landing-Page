@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 
 body{
   display: flex;
@@ -54,19 +57,20 @@ h1, h2{
 .section1{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .section1-content{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 50px 0px;
 }
 
 .section1-img{
-  width: 300px;
+  width: 400px;
   height: auto;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
+  padding: 50px 0px 50px 40px;
 }
 
 h1{
@@ -88,15 +92,26 @@ button{
   text-align: center;
 }
 
+.tiny-img{
+  width: 150px;
+  height: auto;
+  flex: 1 0 auto;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 5px;
+}
+
 .section2-images{
   display: flex;
   padding-top: 20px;
+  justify-content: space-between;
 }
 
 .section2-img-text{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
 }
 
 h2{
@@ -132,6 +147,7 @@ h2{
 .section4 button{
   border-style:solid;
   border-color: white;
+  flex: 0 0 auto;
 }
 
 .section4-blue-box{
@@ -140,8 +156,8 @@ h2{
   border-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 40px 0px;
+  justify-content: space-between;
+  padding: 40px 30px;
 }
 
 .footer{
