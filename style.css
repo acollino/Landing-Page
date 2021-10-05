@@ -2,17 +2,24 @@
   box-sizing: border-box;
 }
 
-body{
+body, .dark-background, .gray-background, .white-background, .section1-content, .section2-img-text{
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  gap: 50px;
 }
 
-h1, h2{
-  padding: 0;
+.header, .section1, .section4-blue-box, .section2-images{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body, h1, h2, h3, .section4 p{
   margin: 0;
+  padding: 0;
+}
+
+body{
+  gap: 50px;
 }
 
 .dark-background, .gray-background, .white-background{
@@ -20,23 +27,13 @@ h1, h2{
   padding-right: 100px;
 }
 
-.dark-background{
+.dark-background, .header a{
   background-color: #1f2937;
-  color: #e5e7eb
+  color: #e5e7eb;
+  text-decoration: none;
 }
 .gray-background{
   background-color: #e5e7eb;
-}
-
-.header a{
-  text-decoration: none;
-  color: #e5e7eb
-}
-
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header-links{
@@ -54,15 +51,7 @@ h1, h2{
   font-weight: 900;
 }
 
-.section1{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .section1-content{
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
 }
 
@@ -70,7 +59,7 @@ h1, h2{
   width: 400px;
   height: auto;
   flex: 0 1 auto;
-  padding: 50px 0px 50px 40px;
+  padding: 40px 0px 50px 40px;
 }
 
 h1{
@@ -79,39 +68,20 @@ h1{
   line-height: 1em;
 }
 
-button{
+button, .section4-blue-box{
   background-color: #3882f6;
   color: #e5e7eb;
-  font-weight: bold;
   border-style: none;
+  border-radius: 5px;
+}
+
+button{
+  font-weight: bold;
   padding: 6px 15px;
-  border-radius: 5px;
 }
 
-.section2{
+.section2, .footer{
   text-align: center;
-}
-
-.tiny-img{
-  width: 150px;
-  height: auto;
-  flex: 1 0 auto;
-  border-color: blue;
-  border-style: solid;
-  border-radius: 5px;
-}
-
-.section2-images{
-  display: flex;
-  padding-top: 20px;
-  justify-content: space-between;
-}
-
-.section2-img-text{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
 }
 
 h2{
@@ -120,14 +90,30 @@ h2{
   font-weight: bolder;
 }
 
-.section2 img{
+.tiny-img{
+  width: 150px;
+  height: auto;
+  flex: 1 0 auto;
   border-color: #3882f6;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.section2-images{
+  padding-top: 20px;
+  align-items: flex-start;
+}
+
+.section2-img-text{
+  align-items: center;
+  margin: 10px;
 }
 
 .section3{
   text-align: right;
   font-weight: bold;
-  padding: 50px 0px;
+  gap: 15px;
+  padding-top: 20px;
 }
 
 .section3 .quote{
@@ -136,12 +122,7 @@ h2{
   font-style: italic;
   font-weight: normal;
   text-align: left;
-}
-
-.section4 p, .section4 h3{
-  color: #e5e7eb;
-  margin:0;
-  padding:0;
+  margin: 0;
 }
 
 .section4 button{
@@ -151,16 +132,9 @@ h2{
 }
 
 .section4-blue-box{
-  background-color: #3882f6;
-  border-radius: 5px;
-  border-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 40px 30px;
 }
 
 .footer{
-  text-align: center;
   padding: 25px 0;
 }
